@@ -1,10 +1,12 @@
+'use client';
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import PinGrid from '../components/PinGrid';
 import PinDetail from '../components/PinDetail';
 import CategoryBar from '../components/CategoryBar';
-import { pins } from '../../data/pins';
-import { Pin } from '../../types';
+import { pins } from '../data/pins';
+
+import { Pin } from '../types/index';
 
 
 function App() {

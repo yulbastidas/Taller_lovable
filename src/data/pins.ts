@@ -1,4 +1,4 @@
-import { Pin, Category,  } from '../types';
+import { Pin, Category,  } from '../types/index';
 
 export const categories: Category[] = [
   { id: 1, name: 'Home Decor', icon: 'home' },
