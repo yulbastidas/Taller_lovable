@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pin } from '../types';
 
-import { X, Heart, MessageCircle, Send, Download, Link, MoreHorizontal } from 'lucide-react';
+import { X,  Send, Download, Link, MoreHorizontal } from 'lucide-react';
 
 interface PinDetailProps {
   pin: Pin | null;
