@@ -1,7 +1,9 @@
 import React from 'react';
+import Image from 'next/image';
+
 import { Pin } from '../types';
 
-import { X,  Send, Download, Link, MoreHorizontal } from 'lucide-react';
+import { X, Send, Download, Link, MoreHorizontal } from 'lucide-react';
 
 interface PinDetailProps {
   pin: Pin | null;
@@ -33,10 +35,13 @@ const PinDetail: React.FC<PinDetailProps> = ({ pin, onClose }) => {
           
           {/* Image Section */}
           <div className="w-full md:w-3/5 relative bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
-            <img 
-              src={pin.imageUrl} 
+            <Image 
+              src={pin.imageUrl}
               alt={pin.title}
-              className="w-full h-auto max-h-[80vh] object-contain"
+              width={800}
+              height={600}
+              className="object-contain max-h-[80vh]"
+              priority={true}
             />
           </div>
           
@@ -67,10 +72,12 @@ const PinDetail: React.FC<PinDetailProps> = ({ pin, onClose }) => {
             
             {/* User Info */}
             <div className="flex items-center mb-6">
-              <img 
+              <Image 
                 src={pin.user.avatar} 
                 alt={pin.user.name} 
-                className="w-10 h-10 rounded-full object-cover"
+                width={40}
+                height={40}
+                className="rounded-full object-cover"
               />
               <div className="ml-3">
                 <p className="font-medium text-gray-900 dark:text-white">{pin.user.name}</p>
