@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pin, Category, User } from '../types';
+import { Pin } from '../types';
 
 import { X, Heart, MessageCircle, Send, Download, Link, MoreHorizontal } from 'lucide-react';
 

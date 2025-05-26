@@ -1,7 +1,7 @@
 import React from 'react';
-import { Category } from '../types';
 
-import { categories } from '../data/pins'; // 👈 Importa 'categories' desde pins.ts
+
+import { categories } from '../data/pins'; 
 import { Home, TrendingUp } from 'lucide-react';
 
 const CategoryBar: React.FC = () => {

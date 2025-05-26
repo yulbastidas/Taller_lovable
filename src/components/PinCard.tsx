@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Category } from '../types';  // No es necesario especificar 'index.ts'
+
 
 import { Pin } from '../types';  // Ajusta la ruta si es necesario
 
